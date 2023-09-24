@@ -12,6 +12,6 @@ namespace IdentityProvider.Domain.Entities
     {
         [Key,Required]
         [Column("id")]
-        public long Id { get; set; }
+        public Guid Id { get; set; }
     }
 }
