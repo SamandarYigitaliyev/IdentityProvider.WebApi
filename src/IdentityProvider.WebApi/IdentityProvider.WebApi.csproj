@@ -15,4 +15,8 @@
     <ProjectReference Include="..\IdentityProvider.Service\IdentityProvider.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

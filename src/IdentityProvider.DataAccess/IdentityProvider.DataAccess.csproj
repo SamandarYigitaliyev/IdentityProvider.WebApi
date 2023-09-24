@@ -7,16 +7,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Interface\**" />
+    <Compile Remove="Repository\**" />
+    <Compile Remove="ViewModels\**" />
+    <EmbeddedResource Remove="Interface\**" />
+    <EmbeddedResource Remove="Repository\**" />
+    <EmbeddedResource Remove="ViewModels\**" />
+    <None Remove="Interface\**" />
+    <None Remove="Repository\**" />
+    <None Remove="ViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\IdentityProvider.Application\IdentityProvider.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
   </ItemGroup>
 
