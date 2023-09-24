@@ -12,7 +12,7 @@ namespace IdentityProvider.Domain.Entities.Users
     {
 
         public Guid UserID { get; set; }
-        public Users Users { get; set; }
+        public User Users { get; set; }
 
         [Column("provider_name")]
         public string ProviderName { get; set; } = string.Empty;

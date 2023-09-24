@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IdentityProvider.DataAccess\IdentityProvider.DataAccess.csproj" />
+    <Compile Remove="Dtos\**" />
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Dtos\**" />
+    <None Remove="Validators\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Validators\" />
+    <ProjectReference Include="..\IdentityProvider.DataAccess\IdentityProvider.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
