@@ -12,7 +12,7 @@ namespace IdentityProvider.Domain.Entities
     {
         [Column("user_id")]
         public Guid UserId { get; set; }
-        public Users Users { get; set; }
+        public User Users { get; set; }
         [Column("refresh_token")]
         public string RefreshToken { get; set; } = string.Empty;
         [Column("updated_at")]

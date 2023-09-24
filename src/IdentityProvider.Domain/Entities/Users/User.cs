@@ -6,10 +6,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityProvider.Domain.Entities.Users
+namespace IdentityProvider.Domain.Entities
 {
     [Table("users")]
-    public class Users:Auditable
+    public class User:Auditable
     {
         [Required]
         [Column("first_name")]

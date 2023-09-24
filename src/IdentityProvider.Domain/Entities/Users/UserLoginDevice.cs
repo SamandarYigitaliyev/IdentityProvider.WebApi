@@ -12,7 +12,7 @@ namespace IdentityProvider.Domain.Entities
     {
         [Column("user_id")]
         public Guid UserId { get; set; }
-        public Users Users { get; set; }
+        public User Users { get; set; }
         [Column("ip")]
         public string IP { get; set; } = string.Empty;
         [Column("device_name")]
