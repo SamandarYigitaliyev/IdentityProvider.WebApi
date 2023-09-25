@@ -1,4 +1,5 @@
 ﻿using IdentityProvider.DataAccess.DbContexts;
+using IdentityProvider.DataAccess.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 
@@ -13,6 +14,7 @@ namespace IdentityProvider.WebApi.Configurations.LayerConfigurations
             {
                 options.UseNpgsql(connection);
             });
+            builder.Services.AddScoped<IUnitOfWork,IUnitOfWork>();
         }
     }
 }
