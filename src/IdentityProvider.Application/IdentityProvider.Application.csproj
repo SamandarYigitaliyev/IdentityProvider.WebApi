@@ -16,4 +16,8 @@
     <ProjectReference Include="..\IdentityProvider.Domain\IdentityProvider.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+
 </Project>

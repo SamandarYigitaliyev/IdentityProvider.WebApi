@@ -7,16 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Dtos\**" />
-    <Compile Remove="Validators\**" />
-    <EmbeddedResource Remove="Dtos\**" />
-    <EmbeddedResource Remove="Validators\**" />
-    <None Remove="Dtos\**" />
-    <None Remove="Validators\**" />
+    <PackageReference Include="FluentValidation.ValidatorAttribute" Version="8.6.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\IdentityProvider.DataAccess\IdentityProvider.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\NewFolder\" />
   </ItemGroup>
 
 </Project>

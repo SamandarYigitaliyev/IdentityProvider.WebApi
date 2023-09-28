@@ -7,15 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Interface\**" />
-    <Compile Remove="Service\**" />
-    <EmbeddedResource Remove="Interface\**" />
-    <EmbeddedResource Remove="Service\**" />
-    <None Remove="Interface\**" />
-    <None Remove="Service\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\IdentityProvider.Persistence\IdentityProvider.Persistence.csproj" />
   </ItemGroup>
 
