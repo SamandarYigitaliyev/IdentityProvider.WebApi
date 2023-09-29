@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityProvider.Persistence.Dtos.Users
+namespace IdentityProvider.Persistence.Dtos.Auth
 {
-    public class UserCreateDto
+    public class UserRegisterDto
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
