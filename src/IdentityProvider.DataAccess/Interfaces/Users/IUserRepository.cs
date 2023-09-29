@@ -8,7 +8,5 @@ using System.Threading.Tasks;
 namespace IdentityProvider.DataAccess.Interfaces.Users
 {
     public interface IUserRepository : IGenericRepository<User>
-    {
-        Task Add(IdentityProvider.Persistence.Dtos.Users.UserCreateDto dto);
-    }
+    { }
 }

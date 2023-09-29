@@ -12,7 +12,7 @@ namespace IdentityProvider.DataAccess.Interfaces
         public Task<long> CountAsync();
         public void Add(TEntity entity);
         public void Update(Guid id, TEntity entity);
-        public void Delete(TEntity entity);
+        public void Delete(Guid id);
         public Task<TEntity?> GetByIdAsync(Guid id);
     }
 }

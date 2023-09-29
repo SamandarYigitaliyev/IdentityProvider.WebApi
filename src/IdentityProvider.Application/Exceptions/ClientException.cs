@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityProvider.Service.Service.Users
+namespace IdentityProvider.Application.Exceptions
 {
-    internal class User
+    internal class ClientException
     {
     }
 }

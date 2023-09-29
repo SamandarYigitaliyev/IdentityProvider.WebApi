@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityProvider.Persistence.Dtos.Users
+namespace IdentityProvider.Persistence.Dtos.Auth
 {
     public class UserUpdateParolDto
     {
         public string Password { get; set; } = string.Empty;
+        public string NewPassword { get; set; } = string.Empty;
     }
 }
